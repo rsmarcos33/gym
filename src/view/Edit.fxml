@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="Edit" prefHeight="995.0" prefWidth="1200.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EditController">
+   <children>
+      <VBox layoutX="145.0" layoutY="31.0" prefHeight="696.0" prefWidth="797.0">
+         <children>
+            <VBox prefHeight="56.0" prefWidth="797.0">
+               <children>
+                  <Label text="Id" textFill="#d3190f" />
+                  <TextArea fx:id="taId" prefHeight="34.0" prefWidth="797.0" />
+               </children>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="10.0" prefHeight="77.0" prefWidth="310.0">
+               <children>
+                  <Label text="Ime" textFill="#d3190f" />
+                  <TextField fx:id="tfIme" />
+               </children>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="87.0" prefHeight="77.0" prefWidth="310.0">
+               <children>
+                  <Label text="Prezime" textFill="#d3190f" />
+                  <TextField fx:id="tfPrezime" />
+               </children>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="164.0" prefHeight="77.0" prefWidth="310.0">
+               <children>
+                  <Label text="Tarifa" textFill="#d3190f" />
+                  <ChoiceBox fx:id="cbTarifa" prefWidth="150.0" />
+               </children>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="241.0" prefHeight="77.0" prefWidth="310.0">
+               <children>
+                  <Label text="Datum isteka" textFill="#d3190f" />
+                  <HBox prefHeight="47.0" prefWidth="286.0">
+                     <children>
+                        <Label text="Dan" textFill="#d3190f" />
+                        <ChoiceBox fx:id="cbd" prefWidth="150.0" />
+                        <Label text="Mesec" textFill="#d3190f" />
+                        <ChoiceBox fx:id="cbm" prefWidth="150.0" />
+                        <Label text="Godina" textFill="#d3190f" />
+                        <ChoiceBox fx:id="cby" prefHeight="31.0" prefWidth="194.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox fx:id="vb" layoutX="10.0" layoutY="214.0" prefHeight="219.0" prefWidth="797.0">
+               <children>
+                  <Label text="Iskorisceni termini" textFill="#d3190f" />
+                  <ListView prefHeight="198.0" prefWidth="797.0" />
+               </children>
+            </VBox>
+            <Button fx:id="btnsave" mnemonicParsing="false" onAction="#save" text="Sacuvaj" />
+         </children>
+      </VBox>
+      <VBox layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Button fx:id="btnback" mnemonicParsing="false" onAction="#back" text="Nazad" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
